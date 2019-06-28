@@ -23,4 +23,4 @@ ENV SPOTIPY_CLIENT_SECRET=CLIENT_SECRET
 ENV SPOTIPY_REDIRECT_URI=REDIRECT
 
 # Map serverless offline to docker container
-RUN serverless offline --host 0.0.0.0 --port 5000
+CMD ["serverless", "offline", "--host", "0.0.0.0", "--port", "5000"]
