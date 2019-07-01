@@ -18,9 +18,9 @@ EXPOSE 3000
 COPY . /code
 
 # ENV variables
-ENV SPOTIPY_CLIENT_ID=CLIENT_ID
-ENV SPOTIPY_CLIENT_SECRET=CLIENT_SECRET
-ENV SPOTIPY_REDIRECT_URI=REDIRECT
+ENV SPOTIPY_CLIENT_ID=911c7fb7f0204070a3ede5eac40fdec8
+ENV SPOTIPY_CLIENT_SECRET=48b8ef59527a4611aaa17bf063661127  
+ENV SPOTIPY_REDIRECT_URI=http://localhost:8080/home
 
 # Map serverless offline to docker container
 CMD ["serverless", "offline", "--host", "0.0.0.0", "--port", "5000"]
