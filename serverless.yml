@@ -18,3 +18,17 @@ functions:
           path: /access
           method: post
           cors: true
+  createmix:
+    handler: handlers/mix.createmix
+    events:
+      - http:
+          path: /mix
+          method: post
+          cors: true
+  genreseeds:
+    handler: handlers/genre.genreseeds
+    events:
+      - http:
+          path: /genres
+          method: post
+          cors: true
