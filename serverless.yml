@@ -32,3 +32,10 @@ functions:
           path: /genres
           method: post
           cors: true
+  createplaylist:
+    handler: handlers/playlist.createplaylist
+    events:
+      - http:
+          path: /playlist
+          method: post
+          cors: true
