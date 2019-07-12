@@ -22,5 +22,5 @@ def createmix(event, context):
 
     return {
         'statusCode': httplib.OK,
-        'body': json.dumps({'return_url': results})
+        'body': json.dumps({'tracks': results})
     }
