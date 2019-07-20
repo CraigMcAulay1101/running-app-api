@@ -5,10 +5,13 @@ import spotipy.util as util
 
 def createmix(event, context):
     data = json.loads(event['body'])
+
+    kwargs = {}
     
     token = data['accesstoken']
     genre = data['genres']
-
+    kwargs['target_tempo'] = data['bpm']
+    
     sp = spotipy.Spotify(auth=token)
 
     results = sp.recommendations(
@@ -17,7 +20,7 @@ def createmix(event, context):
         seed_tracks=None,
         limit=20,
         country=None,
-        tempo=data['bpm']    
+        **kwargs    
     )
     
     return {
