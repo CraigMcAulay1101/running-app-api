@@ -39,3 +39,10 @@ functions:
           path: /playlist
           method: post
           cors: true
+  addtracks:
+    handler: handlers/tracks.addtracks
+    events:
+      - http:
+          path: /tracks
+          method: post
+          cors: true

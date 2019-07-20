@@ -1,9 +1,8 @@
 import json
 import http.client as httplib
 import spotipy
-import spotipy.util as util
 
-def createplaylist(event, context):
+def addtracks(event, context):
     data = json.loads(event['body'])
     
     token = data['accesstoken']
@@ -13,11 +12,12 @@ def createplaylist(event, context):
     userdata = sp.current_user()
 
     userid = userdata['id']
-    playlistname = data['name']
+    playlist_id = data['playlist_id']
+    tracks = data['tracks']
 
-    result = sp.user_playlist_create(userid, playlistname, public=True)
+    result = sp.user_playlist_add_tracks(userid, playlist_id, tracks, position=None)
     
     return {
         'statusCode': httplib.OK,
-        'body': json.dumps({'playlist_id': result['id']})
+        'body': json.dumps({'result': result})
     }   

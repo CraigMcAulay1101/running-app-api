@@ -19,8 +19,8 @@ def createmix(event, context):
         country=None,
         tempo=data['bpm']    
     )
-
+    
     return {
         'statusCode': httplib.OK,
-        'body': json.dumps({'tracks': results})
+        'body': json.dumps({'tracks': results['tracks']})
     }
