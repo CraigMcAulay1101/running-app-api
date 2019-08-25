@@ -1,9 +1,11 @@
-service: spotipy-test
+service: hastify
 plugins:
   - serverless-offline
 provider:
   name: aws
   runtime: python3.7
+  region: eu-west-1
+  stage: prod
 functions:
   getURL:
     handler: handlers/auth.getauthurl
