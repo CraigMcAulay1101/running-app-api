@@ -3,7 +3,7 @@ import http.client as httplib
 import spotipy.util as util
 
 def getauthurl(event, context):
-    username = 'craig1101'
+    username = 'blank'
     scope = 'playlist-modify-public'
     redirecturl = util.prompt_for_user_token(username, scope)
     
