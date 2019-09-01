@@ -9,5 +9,9 @@ def getauthurl(event, context):
     
     return {
         'statusCode': httplib.OK,
+        'headers': {
+            'Access-Control-Allow-Origin': "*",
+            'Content-Type': 'application/json'
+        },
         'body': json.dumps({'return_url': redirecturl})
     }
