@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
-      - npm install -g serverless
+      - npm install -g serverless@1.41.1
       - npm install hapi jsonpath-plus
   build:
     commands:
