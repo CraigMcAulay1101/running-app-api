@@ -6,7 +6,7 @@ phases:
       nodejs: 10
     commands:
       - npm install -g serverless
-      - npm install hapi
+      - npm install hapi jsonpath-plus
   build:
     commands:
       - serverless deploy
