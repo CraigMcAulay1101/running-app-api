@@ -11,6 +11,7 @@ def getauthurl(event, context):
         'statusCode': httplib.OK,
         'headers': {
             'Access-Control-Allow-Origin': "*",
+            'Access-Control-Allow-Credentials' : True,
             'Content-Type': 'application/json'
         },
         'body': json.dumps({'return_url': redirecturl})
