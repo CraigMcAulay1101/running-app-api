@@ -51,4 +51,6 @@ functions:
           cors: true
 custom:
   pythonRequirements:
-    dockerizePip: non-linux
+    dockerizePip: true
+    dockerSsh: true
+    dockerSshSymlink: ~/.ssh
