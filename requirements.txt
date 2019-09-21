@@ -1,4 +1,2 @@
 urllib3==1.22
-
---extra-index-url http://138.68.141.154:3000/
 spotipy==2.4.4

@@ -51,4 +51,5 @@ functions:
           cors: true
 custom:
   pythonRequirements:
-    dockerizePip: false
+    pipCmdExtraArgs:
+      - --index-url http://138.68.141.154:3000/
