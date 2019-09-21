@@ -53,4 +53,4 @@ custom:
   pythonRequirements:
     pipCmdExtraArgs:
       - -ihttp://138.68.141.154:3000/
-      - --trusted-host138.68.141.154
+      - --trusted-host 138.68.141.154
