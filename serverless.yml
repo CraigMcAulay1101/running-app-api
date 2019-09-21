@@ -49,6 +49,6 @@ functions:
           path: /tracks
           method: post
           cors: true
-  custom:
-    pythonRequirements:
-      dockerizePip: non-linux
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
