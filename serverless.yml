@@ -51,4 +51,4 @@ functions:
           cors: true
 custom:
   pythonRequirements:
-    dockerFile: ./Dockerfile
+    dockerizePip: non-linux
