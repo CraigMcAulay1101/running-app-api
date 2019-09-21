@@ -51,4 +51,4 @@ functions:
           cors: true
 custom:
   pythonRequirements:
-    dockerizePip: true
+    dockerizePip: false
