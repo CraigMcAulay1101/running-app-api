@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Craig115/running-app-api#readme",
   "dependencies": {
+    "hapi": "^18.1.0",
     "serverless": "1.41.1",
-    "serverless-offline": "4.9.4"
+    "serverless-offline": "4.9.4",
+    "serverless-python-requirements": "^5.0.0"
   }
 }

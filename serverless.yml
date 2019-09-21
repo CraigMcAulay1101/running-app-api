@@ -1,6 +1,7 @@
 service: hastify
 plugins:
   - serverless-offline
+  - serverless-python-requirements
 provider:
   name: aws
   runtime: python3.7
@@ -48,3 +49,6 @@ functions:
           path: /tracks
           method: post
           cors: true
+  custom:
+    pythonRequirements:
+      dockerizePip: non-linux
