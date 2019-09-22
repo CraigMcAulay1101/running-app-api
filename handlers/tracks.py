@@ -19,5 +19,10 @@ def addtracks(event, context):
     
     return {
         'statusCode': httplib.OK,
+        'headers': {
+            'Access-Control-Allow-Origin': "*",
+            'Access-Control-Allow-Credentials' : True,
+            'Content-Type': 'application/json'
+        },
         'body': json.dumps({'result': result})
     }   
