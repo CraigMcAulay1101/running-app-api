@@ -1,2 +1,0 @@
-urllib3==1.22
-spotipy==2.4.4
